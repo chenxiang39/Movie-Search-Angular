@@ -1,0 +1,118 @@
+.mylistContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem 0 9rem;
+    min-height: 94vh;
+}
+.title{
+
+}
+.ntitile{
+    margin-top: 4rem;
+    text-align: center;
+}
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.singlePoster{
+    /* display: inline-block; */
+    padding: 4% 1.5% 0 1.5%;
+    text-align: center;
+    position: relative;
+    width: 15% 
+}
+.singleA{
+   
+}
+.singleA:hover{
+    transform: scale(1.1);
+}
+.singleA:hover .shadow{
+    opacity: 1;
+    width:100%;
+}
+.singleA:hover .titleText{
+    opacity: 1;
+    width:100%;
+}
+.titleText{
+    width: 75%;
+    font-size: 1.2vw;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    bottom: 0.5vw;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow: hidden;
+    opacity: 0;
+    margin-left: 0.5vw;
+    text-align:left;
+    padding-right:2vw
+}
+.picsum-img-wrapper{
+    overflow: hidden;
+}
+.imgPic{
+    /* height : 19vw;
+    width: 11.5vw; */
+    height : 100%;
+    width: 100%;
+    max-width: 11.5vw;
+    z-index: 1;
+}
+.shadow{
+    display: flex;
+    background-image: linear-gradient(to top, rgba(0,0,0,1.1) , rgba(0,0,0,0.1));
+    filter: blur(0.6rem);
+    opacity: 0;
+    width: 80%;
+    height: 50%;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width:990px){
+    .mylistContainer{
+        padding: 0 2rem 0 2rem;
+    }
+    .mainContainer{
+        flex-direction: column;
+    }
+    .singlePoster{
+        /* display: inline-block; */
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+    .imgPic{
+        height : 81vw;
+        max-width: 56vw;
+        z-index: 1;
+    }
+    .singleA:hover .shadow{
+        width:88.3%;
+        left: 5.9%;
+    }
+    .singleA:hover .titleText{
+        width: 82.5%;
+        left:11%;
+    }
+    .shadow{
+        opacity: 1;
+        width:64.3%;
+        left:17.9%;
+    }
+    .titleText{
+        opacity: 1;
+        font-size: 4.5vw;
+        width:60%;
+        bottom: 3%;
+        left:22%
+    }
+}
+
+

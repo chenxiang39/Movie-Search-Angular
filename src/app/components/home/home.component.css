@@ -1,0 +1,17 @@
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (min-width:990px){
+    .homeContainer{
+        /* padding-top: 6vw; */
+    }
+}
+
+.headerContainer{
+    padding: 0;
+}
+.itemContainer{
+    margin-top: 6vw;
+}

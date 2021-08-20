@@ -1,0 +1,43 @@
+.Container{
+    margin-top: 2.5rem;
+    padding: 0 7vw 0 7vw;
+}
+.ItemContainer{
+    margin-top: 1.5rem;
+}
+.Item{
+    height: 24rem;
+    max-width: 12rem;
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex:auto;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.Item:hover{
+    cursor: pointer;
+}
+.Img{
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+.Intro{
+    background: white;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    padding: 1rem 2rem 1rem 1rem;
+}
+.contentHeight{
+    height: 27rem;
+}
+@media (min-width:990px){
+    .Container{
+        margin-top: 4rem;
+        padding: 0 10vw 0 7vw;
+    }
+    .ItemContainer{
+        margin-top: 2rem;
+    }
+}

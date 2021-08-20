@@ -1,0 +1,19 @@
+<div *ngIf = "reviewData.length !== 0" class = "Container">
+    <div class = "BigTitle">Reviews &nbsp;<span class="grey"> {{reviewData.length}}</span></div>
+    <div class = "Item" *ngFor = "let cur of reviewData; index as i">
+        <div class = "Icon">
+            <img class = "Img" [src] = cur.avatar_path />
+        </div>
+        <div class = "main">
+            <div class = "title black medium">A review created by {{cur.author}} &nbsp; &nbsp;</div>
+            <div class = "vote small white">{{cur.rating}}</div>
+            <div class = "info grey small">Written by {{cur.author}} on {{cur.created_at}}</div>
+            <div class = "content black small">{{cur.content}}</div>
+            <div class = "rest black small">
+                <a target = '_blank' href = {{cur.url}}>
+                    read the rest
+                </a>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.selfcontainer{
+  background: rgb(5, 14, 77);
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+.header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.itemContainer{
+  margin-top: 2rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.nav-item{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.selfcontainer ::ng-deep .navbar{
+  background: rgb(6, 12, 42);
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+@media (min-width:990px){
+  .selfcontainer ::ng-deep .navbar-collapse{
+    justify-content: space-between !important;
+  }
+}
+@media (max-width:990px){
+  .selfcontainer ::ng-deep .nav-item{
+    align-items: flex-end;
+  }
+  .navbar-search{
+    margin-top: 2rem;
+  }
+  .selfcontainer ::ng-deep .navbar{
+    padding-right: 0;
+  }
+  .nav-item{
+    padding-right: 4rem;
+  }
+  .navbar-toggler{
+    margin-right: 3rem ;
+  }
+}
+.selfcontainer ::ng-deep .active{
+  color: white;
+}
+.selfcontainer ::ng-deep .navbar-brand{
+  color: white;
+}
+.selfcontainer ::ng-deep .navbar-brand:hover{
+  color: white;
+}
+.navbar-toggler{
+  color: rgb(121,126,143) !important;
+}
+.nav-link{
+  color: rgb(116,126,143) !important;
+  font-size:1rem;
+  text-align: end;
+}
+.selected{
+  color: white !important;
+}
+.nav-link:hover{
+  color: white !important;
+}
+.navbar-search{
+  position: relative;
+  right: 0;
+  padding-right: 4rem;
+}
+.footerContainer{
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 2vw;
+  position: relative;
+  bottom: 1vw;
+}

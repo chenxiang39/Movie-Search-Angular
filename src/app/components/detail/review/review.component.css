@@ -1,0 +1,85 @@
+.Container{
+    margin-top: 4rem;
+    padding: 0 10vw 0 7vw;
+}
+.Item{
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.Icon{
+    flex:1;
+    padding: 2rem 0 0 3rem;
+}
+.Img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem
+}
+.main{
+    flex: 8;
+    padding: 1.5rem 5.5rem 1rem 2rem;
+    line-height: 2rem;
+}
+.title{
+    display: inline;
+}
+.vote{
+    display: inline-flex;
+    border-radius: 3rem;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.info{
+    margin-top: 2.5rem;
+}
+.content{
+    display: -webkit-box;
+    margin-top: 1.5rem;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.rest{
+    margin-top: 1.2rem;
+}
+.rest ::ng-deep a{
+    color:rgb(1,26,134);
+}
+@media (max-width:990px){
+    .Container{
+        margin-top: 2.5rem;
+        padding: 0 7vw 0 7vw;
+    }
+    .Item{
+        flex-direction: column;
+    }
+    .main{
+        width:100%;
+        padding: 1rem 3.5rem 1rem 1.5rem;
+    }
+    .Icon{
+        width: 50%;
+        padding: 2rem 0 0 3rem;
+    }
+    .title{
+        display: block;
+    }
+    .vote{
+        margin-top: 0;
+    }
+    .info{
+        margin-top: 1.6rem;
+    }
+    .content{
+        margin-top: 1rem;
+    }
+    .rest{
+        margin-top: 1rem;
+    }
+}

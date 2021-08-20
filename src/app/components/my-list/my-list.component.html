@@ -1,0 +1,23 @@
+<div class = "mylistContainer">  
+    <div *ngIf = "mylistData.length !== 0" class = "foundedContainer">
+        <div class = "title BigTitle" >My WatchList</div>
+        <div class="mainContainer">
+            <div class = "singlePoster" *ngFor="let cur of mylistData; index as j;">
+                <div class="singleA">
+                    <a class = "aClass" [routerLink]= "['/watch/',cur.type,cur.id]">
+                        <div class= "titleText">
+                            <span>{{cur.title}}</span>
+                        </div>
+                        <div class = "shadow"></div>
+                        <div class="picsum-img-wrapper"> 
+                            <img class = "imgPic" src = "{{cur.poster_path}}" alt="{{cur.title}}" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf = "mylistData.length === 0" class = “notfoundedContainer”>
+        <div class  = "ntitile BigTitle">No items found in Watchlist.</div>
+    </div>
+</div>

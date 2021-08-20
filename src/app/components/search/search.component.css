@@ -1,0 +1,27 @@
+.searchContainer{
+    color: white;
+}
+.imgPic{
+    width:5rem;
+    height:2.5rem;
+    margin-right: 1rem;
+}
+.searchContainer ::ng-deep .form-control{
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    color: white;
+    border-radius: 0;
+}
+.searchContainer ::ng-deep .form-control:focus{
+    background: transparent;
+    border-color: white;
+    box-shadow: none;
+}
+.searchContainer ::ng-deep .dropdown-menu{
+    border:rgb(205, 209, 220) solid 1px;
+    background: rgb(5, 14, 77);
+}
+.searchContainer ::ng-deep .dropdown-item{
+    padding: 0.6rem;
+    color: white;
+}

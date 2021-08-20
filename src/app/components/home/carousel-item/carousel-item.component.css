@@ -1,0 +1,141 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 38vw;
+}
+.title{
+    padding-left: 3rem;
+}
+.carouselContainer{
+    /* background-color: teal; */
+    
+}
+.carouselContainer:focus{
+    outline:none;
+}
+.carouselContainer ::ng-deep .carousel-item.active{
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+}
+
+.singlePoster{
+    /* display: inline-block; */
+    padding: 1.2% 1.1% 1.2% 1.4%;
+    text-align: center;
+    position: relative;
+}
+.singleA{
+}
+.singleA:hover{
+    transform: scale(1.1);
+}
+.singleA:hover .shadow{
+    opacity: 1;
+}
+.singleA:hover .titleText{
+    opacity: 1;
+}
+.titleText{
+    width: 9vw;
+    font-size: 1.2vw;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    bottom: 0.5vw;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow: hidden;
+    opacity: 0;
+    margin-left: 0.5vw;
+    text-align:left 
+}
+.picsum-img-wrapper{
+    overflow: hidden;
+}
+.imgPic{
+    /* height : 19vw;
+    width: 11.5vw; */
+    height : 19vw;
+    width: 100%;
+    max-width: 11.5vw;
+    z-index: 1;
+}
+.shadow{
+    display: flex;
+    background-image: linear-gradient(to top, rgba(0,0,0,1.1) , rgba(0,0,0,0.1));
+    filter: blur(0.6rem);
+    opacity: 0;
+    width: 100%;
+    height: 10vw;
+    z-index: 2;
+    position: absolute;
+    top: 9.5vw;
+}
+.carouselContainer ::ng-deep .carousel-indicators{
+    display: flex;
+    position: relative;
+    top:28vw;
+    bottom: -5vw;
+}
+.carouselContainer ::ng-deep .carousel-control-prev{
+    width: 4vw;
+    margin-left: 0.9vw;
+}
+.carouselContainer ::ng-deep .carousel-control-next{
+    width: 4vw;
+    margin-right: 0.9vw;
+}
+@media (min-width:990px){
+    .carouselContainer ::ng-deep .carousel-inner{
+        max-height: 20.6vw;
+    } 
+}
+
+/* phone */
+@media (max-width:990px){
+    .mainContainer{
+        margin-top: 1rem;
+    }
+    .title{
+        padding-left: 2rem;
+    }
+    .imgPic{
+        height : 81vw;
+        max-width: 56vw;
+        z-index: 1;
+    }
+    .singleA:hover .shadow{
+        left: 0.2vw;
+    }
+    .singleA:hover .titleText{
+        left: 1.2vw;
+    }
+    .shadow{
+        opacity: 1;
+        height : 40.5vw;
+        width: 100%;
+        top:40vw;
+        /* left: 1.4vw; */
+    }
+    .titleText{
+        opacity: 1;
+        width: 30vw;
+        font-size: 4.5vw;
+        bottom: 5vw;
+        left: 4vw;
+    }
+    .singlePoster{
+        margin-top: 1rem;
+        padding: 0;
+    }
+    .carouselContainer ::ng-deep .carousel-inner{
+        max-height: 89vw;
+    } 
+    .carouselContainer ::ng-deep .carousel-item{
+        text-align: center;
+    }
+    .carouselContainer ::ng-deep .carousel-item.active{
+        justify-content: center;
+    }
+}

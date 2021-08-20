@@ -1,0 +1,155 @@
+div{
+    word-wrap: break-word;
+    word-break: normal;
+}
+.detailContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topContainer{
+    padding: 0 7vw 0 7vw;
+    
+}
+.videoContainer{
+    display: inline-block;
+}
+.introContainer{
+    display: inline-block;
+    min-height: 40vw;
+    width:80vw;
+    padding: 5vw 0 0 0;
+    /* background-color: palegreen; */
+}
+.tagline{
+    margin-top: 1rem;
+}
+.yearTimeVote{
+    margin-top: 1.8rem;
+    white-space: pre
+}
+.genres{
+    margin-top: 0.8rem;
+}
+.language{
+    margin-top: 0;
+}
+.checklistBtnContainer{
+    margin-top: 1.4rem;
+}
+.checklistBtn{
+    background: rgb(68, 137, 248);
+    height:2.4rem;
+    width:10.5rem;
+    border-radius: 0.3rem;
+    border: transparent;
+}
+.watch{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+.isRemove{
+    width:14rem;
+}
+.checklistBtn:focus{
+    outline: none;
+}
+.checklistBtn:hover{
+    background: rgb(56,118,224);
+}
+.checklistInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    height:3rem;
+    width:100%;
+    border-radius: 0.3rem;
+}
+.InfoCancelBtn{
+    height:3rem;
+    width:3rem;
+    border-radius: 0.3rem;
+    border: transparent;
+}
+.InfoCancelBtn:focus{
+    outline: none;
+}
+.addedInfo{
+    background: rgb(206, 233, 215);
+    color:rgb(106,156,129)
+}
+.removeInfo{
+    background: rgb(245, 208, 214);
+    color:rgb(169,125,121)
+}
+.descrContainer{
+    margin-top: 2.5rem;
+    padding: 0 7vw 0 7vw;
+}
+.belowtitle{
+    height:2.5rem;
+}
+.shareContainer{
+    margin-top: 2rem;
+    padding: 0 7vw 0 7vw;
+}
+.carousal{
+    margin-top: 4rem;
+    padding: 0 6vw 0 6vw;
+}
+.fa {
+    font-size: 2rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 1rem 0 0;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook-color {
+    color: rgb(4, 40, 174);
+}
+
+.fa-twitter {
+    background: transparent;
+    color: #55ACEE;
+}
+@media (min-width:990px){
+    .detailContainer{
+        /* padding-top: 6vw; */
+    }
+    .topContainer{
+        display: flex;
+    }
+    .introContainer{
+        min-height: 25vw;
+        width: 30vw;
+        padding: 0 3vw 0 3vw;
+    }
+    .descrContainer{
+        margin-top: 1rem;
+        padding: 0 10vw 0 7vw;
+    }
+    .shareContainer{
+        margin-top: 2rem;
+        padding: 0 10vw 0 7vw;
+    }
+    .tagline{
+        margin-top: 1rem;
+    }
+    .yearTimeVote{
+        margin-top: 2.2rem;
+    }
+    .genres{
+        margin-top: 1rem;
+    }
+    .checklistBtnContainer{
+        margin-top: 2.2rem;
+    }
+}

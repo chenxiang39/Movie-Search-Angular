@@ -1,0 +1,39 @@
+<div *ngIf = "originDataArr.length > 0" class="mainContainer">
+    <div class = "title BigTitle">{{title}}</div>
+        <ngb-carousel class="carouselContainer" *ngIf = "!mobile" #carousel [interval]="interval" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [showNavigationIndicators] = "showNavigationIndicators"(slide)="onSlide($event)">
+            <ng-template ngbSlide *ngFor="let data of pcDataArr; index as i">
+                <div class = "singlePoster" *ngFor="let cur of data; index as j;">
+                    <div class="singleA">
+                        <a class = "aClass" [routerLink]= "['/watch/',cur.type,cur.id]">
+                            <div class= "titleText">
+                                <span>{{cur.title}}</span>
+                            </div>
+                            <div class = "shadow"></div>
+                            <div class="picsum-img-wrapper"> 
+                            <img class = "imgPic" src = "{{cur.poster_path}}" alt="{{cur.title}}" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+
+        <ngb-carousel class="carouselContainer" *ngIf = "mobile" #carousel [interval]="interval" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [showNavigationIndicators] = "showNavigationIndicators"(slide)="onSlide($event)">
+            <ng-template ngbSlide *ngFor="let cur of originDataArr; index as i">
+                <div class = "singlePoster">
+                    <div class="singleA">
+                        <a class = "aClass" [routerLink]= "['/watch/',cur.type,cur.id]">
+                            <div class= "titleText">
+                                <span>{{cur.title}}</span>
+                            </div>
+                            <div class = "shadow"></div>
+                            <div class="picsum-img-wrapper"> 
+                                <img class = "imgPic" src = "{{cur.poster_path}}" alt="{{cur.title}}" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+</div>
+

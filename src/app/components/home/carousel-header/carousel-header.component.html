@@ -1,0 +1,16 @@
+<ngb-carousel class = "container" #carousel [interval]="interval" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [showNavigationIndicators] = "showNavigationIndicators"(slide)="onSlide($event)">
+    <ng-template ngbSlide *ngFor="let data of dataArr; index as i">
+      <a [routerLink]= "['./watch/','movie',data.id]">
+        <div class="picsum-img-wrapper">
+          <div class = "shadow"></div>
+          <div class="carousel-caption title">
+            <h3 class="titleText">{{data.title}}</h3>
+          </div>
+          <img class = "imgPic" src = "{{data.backdrop_path}}" alt="{{data.title}}" />
+        </div>
+      </a>
+    </ng-template>
+</ngb-carousel>
+
+
+  

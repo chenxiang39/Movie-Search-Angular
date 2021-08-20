@@ -1,0 +1,24 @@
+<div *ngIf = "castData.length !== 0" class = "Container">
+    <ng-template #modal let-modal>
+        <app-modal [modaldata] = "modalData" [externaldata] = "castExternalData"></app-modal>
+    </ng-template> 
+    <div class = "BigTitle">Full  and Crew</div>
+    <div class = "ItemContainer"> 
+        <div class = "d-flex flex-row flex-nowrap overflowScroll contentHeight">
+            <div class = "Item" *ngFor = "let cur of castData; index as i" (click) = "castBtnFun(cur.id,modal)">
+                <img class = "Img" [src] = cur.profile_path/>
+                <div class = "Intro">
+                    <div class = "small black">
+                        {{cur.name}}
+                    </div>
+                    <div class = "small bolder black">
+                        AS
+                    </div>
+                    <div class = "small light black">
+                        {{cur.character}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

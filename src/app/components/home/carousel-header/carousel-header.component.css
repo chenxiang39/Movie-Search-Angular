@@ -1,0 +1,88 @@
+.container{
+    width:85vw;
+}
+.container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.container:hover .titleText{
+    opacity: 1;
+}
+.container:hover .shadow{
+    opacity: 0.6;
+}
+.container:focus{
+    outline:none;
+}
+.title{
+    display: inline;
+    left:3rem;
+    width: 20rem;
+    text-align: start;
+    bottom: 1vw;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow: hidden;
+}
+.titleText{
+    /* display: inline; */
+    font-size: 2rem;
+    z-index: 3;
+    opacity: 0;
+}
+.imgPic{
+    width: 100%;
+    height: 45vh;
+    z-index: 1;
+}
+.shadow{
+    background-image: linear-gradient(to top, rgba(0,0,0,1.1) , rgba(0,0,0,0.1));
+    filter: blur(0.6rem);
+    opacity: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.container ::ng-deep .carousel-indicators{
+    display: flex;
+}
+.container ::ng-deep .carousel-control-prev{
+    width: 4.5vw;
+    margin-left: 0.9vw;
+}
+.container ::ng-deep .carousel-control-next{
+    width: 4.5vw;
+    margin-right: 0.9vw;
+} 
+@media (max-width:990px){
+    .title{
+        display: inline;
+        left: 2.5vw;
+        bottom: 0.5vw;
+        text-align: start;
+    }
+    .imgPic{
+        height: 100%;
+    }
+
+    .titleText{
+        /* display: inline; */
+        font-size: 1.3rem;
+        z-index: 3;
+        opacity: 0;
+    }
+    .container ::ng-deep .carousel-indicators{
+        display: none;
+    }
+    .container ::ng-deep .carousel-control-prev{
+        width: 15%;
+        margin-left: 0.9vw;
+    }
+    .container ::ng-deep .carousel-control-next{
+        width: 15%;
+        margin-right: 0.9vw;
+    } 
+}
